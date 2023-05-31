@@ -1,9 +1,7 @@
 name: Issues
-on:
-  issues:
-    types: [opened, edited, milestoned]
+on: issues
 jobs:
-  issue_updates:
+  output-info:
     runs-on: ubuntu-latest
     steps:
       - name: Log issue updates
