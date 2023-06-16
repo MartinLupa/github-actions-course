@@ -1,8 +1,0 @@
-name: Issues
-on: issues
-jobs:
-  output-info:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Log issue updates
-        run: echo "${{ toJSON(github.event.issue) }}"
